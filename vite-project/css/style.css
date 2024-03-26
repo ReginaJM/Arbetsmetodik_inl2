@@ -1,0 +1,118 @@
+@import './vendor/_normalize.css';
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figure {
+  margin: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  width: 100%;
+  height: 615px;  /*För att täcka hela skärmen vertikalt 100vh */
+  overflow: hidden; /* Döljer överflödiga delar av bilden */
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 615px; 
+  background: linear-gradient(to bottom, rgba(89, 82, 59, 1), rgba(89, 82, 59, 0)); 
+  z-index: 1; 
+} 
+
+.hero img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0; /* Placera bilden längst ned */
+  left: 0;
+  object-fit: cover; /* Skalar bilden för att täcka hela utrymmet utan att deformeras */
+  z-index: 0; /* Säkerställer att bilden ligger bakom gradienten */
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; /* Säkerställer att headern ligger över gradienten */
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding-top: 40px;
+
+}
+
+h1 {
+  color: rgb(237, 231, 213);
+  margin: 0;
+  font-family: "Eczar", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Skugga med förskjutning på 2px i x- och y-riktning och en suddig radius på 4px */
+
+}
+
+.nav-left,
+.nav-right {
+  color: rgb(237, 231, 213);
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+
+.nav-left {
+  margin-left: 20px;
+}
+
+.nav-right {
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hiking {
+  background-color: rgba(89, 82, 59);
+  height: 300px;
+}
+
+.camping {
+  background-color: rgba(89, 82, 59);
+  height: 3000px;
+}
+
+p {
+  font-family: sans-serif;
+  color: rgb(237, 231, 213);
+  margin: 0;
+}
