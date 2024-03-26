@@ -92,6 +92,7 @@ nav ul {
 nav ul li {
   display: inline;
   margin: 0 10px;
+  cursor: pointer;
 }
 
 nav ul li a {
