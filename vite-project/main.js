@@ -51,6 +51,7 @@ nextSlide.addEventListener("click", function () {
   });
 });
 
+
 // select prev slide button
 const prevSlide = document.querySelector(".btn-prev");
 
