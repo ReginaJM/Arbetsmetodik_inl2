@@ -18,7 +18,7 @@ body, html {
 
 .hero {
   width: 100%;
-  height: 615px; 
+  height: auto; /* 615px */
   overflow: hidden; 
   position: relative;
 }
@@ -29,7 +29,7 @@ body, html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 615px; 
+  height: 100%; 
   background: linear-gradient(to bottom, rgba(89, 82, 59, 1), rgba(89, 82, 59, 0)); 
   z-index: 1; 
 } 
@@ -37,7 +37,7 @@ body, html {
 .hero img {
   width: 100%;
   height: auto;
-  position: absolute;
+  /* position: absolute; */
   top: 0; 
   left: 0;
   object-fit: cover; 
