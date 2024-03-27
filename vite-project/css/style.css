@@ -167,7 +167,7 @@ nav ul li a {
   border-radius: 50%;
   z-index: 10px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: rgb(237, 231, 213);
   font-size: 18px;
 }
 
