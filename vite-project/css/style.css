@@ -139,7 +139,7 @@ nav ul li a {
 .slider {
   width: 100%;
   max-width: 800px;
-  height: 700px;
+  height: 1000px;
   position: relative;
   overflow: hidden; 
 }
@@ -147,7 +147,7 @@ nav ul li a {
 .slide {
   width: 100%;
   max-width: 800px;
-  height: 700px;
+  height: 1000px;
   position: absolute;
   transition: all 0.6s;
 }
@@ -167,7 +167,7 @@ nav ul li a {
   border-radius: 50%;
   z-index: 10px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: rgb(237, 231, 213);
   font-size: 18px;
 }
 
