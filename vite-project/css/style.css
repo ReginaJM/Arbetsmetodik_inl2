@@ -149,7 +149,7 @@ nav ul li a {
   max-width: 800px;
   height: 700px;
   position: absolute;
-  transition: all 0.5s;
+  transition: all 0.6s;
 }
 
 .slide img {
