@@ -185,6 +185,17 @@ nav ul li a {
   right: 2%;
 }
 
+footer {
+  background-color: rgb(237, 231, 213);
+  color: rgba(89, 82, 59);
+  text-align: center;
+  padding: 20px 0; 
+  p {
+    margin: 0;
+  }
+}
+
+
 
 
 
