@@ -18,23 +18,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+/* 
+
 // Select all slides
 const slides = document.querySelectorAll(".slide");
+// current slide counter
+let curSlide = 0;
+// select next slide button
+const nextSlide = document.querySelector(".btn-next");
+// maximum number of slides
+let maxSlide = slides.length - 1;
 
 // loop through slides and set each slides translateX property to index * 100% 
 slides.forEach((slide, indx) => {
   slide.style.transform = `translateX(${indx * 100}%)`;
 });
 
-// current slide counter
-let curSlide = 0;
-
-// select next slide button
-const nextSlide = document.querySelector(".btn-next");
-
-
-// maximum number of slides
-let maxSlide = slides.length - 1;
 
 // add event listener and navigation functionality
 nextSlide.addEventListener("click", function () {
@@ -68,4 +69,53 @@ prevSlide.addEventListener("click", function () {
   slides.forEach((slide, indx) => {
     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
   });
-});
+}); 
+
+ */
+
+
+
+
+/**
+ * 
+ * Function to set ut carousel collage
+ */
+function setupCarousel(slidesSelector, nextButtonSelector, prevButtonSelector) {
+  const slides = document.querySelectorAll(slidesSelector);
+  let curSlide = 0;
+  const maxSlide = slides.length - 1;
+
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${indx * 100}%)`;
+  });
+
+
+  document.querySelector(nextButtonSelector).addEventListener("click", function () {
+    if (curSlide === maxSlide) {
+      curSlide = 0;
+    } else {
+      curSlide++;
+    }
+
+    slides.forEach((slide, indx) => {
+      slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+    });
+  });
+
+  document.querySelector(prevButtonSelector).addEventListener("click", function () {
+    if (curSlide === 0) {
+      curSlide = maxSlide;
+    } else {
+      curSlide--;
+    }
+
+    slides.forEach((slide, indx) => {
+      slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+    });
+  });
+}
+
+// Använd funktionen för att skapa två olika carousels
+// setupCarousel(".slide-carousel1", ".btn-next-carousel1", ".btn-prev-carousel1");
+setupCarousel(".slide", ".btn-next", ".btn-prev");
+setupCarousel(".slide-camping", ".btn-next-camping", ".btn-prev-camping");
