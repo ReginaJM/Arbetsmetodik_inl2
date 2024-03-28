@@ -1,3 +1,7 @@
+/**
+ * 
+ * Functionality for menu buttons
+ */
 document.addEventListener("DOMContentLoaded", function() {
   
   const linkHiking = document.getElementById("linkHiking");
@@ -18,61 +22,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
-/* 
-
-// Select all slides
-const slides = document.querySelectorAll(".slide");
-// current slide counter
-let curSlide = 0;
-// select next slide button
-const nextSlide = document.querySelector(".btn-next");
-// maximum number of slides
-let maxSlide = slides.length - 1;
-
-// loop through slides and set each slides translateX property to index * 100% 
-slides.forEach((slide, indx) => {
-  slide.style.transform = `translateX(${indx * 100}%)`;
-});
-
-
-// add event listener and navigation functionality
-nextSlide.addEventListener("click", function () {
-  // check if current slide is the last and reset current slide
-  if (curSlide === maxSlide) {
-    curSlide = 0;
-  } else {
-    curSlide++;
-  }
-
-//   move slide by -100%
-  slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-  });
-});
-
-
-// select prev slide button
-const prevSlide = document.querySelector(".btn-prev");
-
-// add event listener and navigation functionality
-prevSlide.addEventListener("click", function () {
-  // check if current slide is the first and reset current slide to last
-  if (curSlide === 0) {
-    curSlide = maxSlide;
-  } else {
-    curSlide--;
-  }
-
-  //   move slide by 100%
-  slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-  });
-}); 
-
+/**
+ * 
+ * Functionality for To-top-btn scroll behavior
  */
+document.addEventListener("DOMContentLoaded", function() {
+  // Här lägger vi till eventlyssnare för klick på knappen
+  document.getElementById("to-top-btn").addEventListener("click", function() {
+      scrollToTop();
+  });
 
+  // Här lägger vi till eventlyssnare för scrollning
+  window.addEventListener("scroll", function() {
+      scrollFunction();
+  });
+});
+
+function scrollToTop() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("to-top-btn").style.display = "block";
+    } else {
+        document.getElementById("to-top-btn").style.display = "none";
+    }
+} 
 
 
 
@@ -115,7 +96,5 @@ function setupCarousel(slidesSelector, nextButtonSelector, prevButtonSelector) {
   });
 }
 
-// Använd funktionen för att skapa två olika carousels
-// setupCarousel(".slide-carousel1", ".btn-next-carousel1", ".btn-prev-carousel1");
 setupCarousel(".slide-hiking", ".btn-next-hiking", ".btn-prev-hiking");
 setupCarousel(".slide-camping", ".btn-next-camping", ".btn-prev-camping");

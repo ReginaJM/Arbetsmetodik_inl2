@@ -136,7 +136,9 @@ nav ul li a {
 }
 
 #to-top-btn:hover {
-  background-color: #0056b3;
+  background-color: rgba(89, 82, 59);
+  color: rgb(237, 231, 213);
+  border: solid 2px rgb(237, 231, 213);
 }
 
 
