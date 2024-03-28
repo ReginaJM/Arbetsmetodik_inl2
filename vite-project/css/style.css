@@ -95,17 +95,11 @@ nav ul {
   padding: 0;
 }
 
-/* nav ul li {
-  display: inline;
-  margin: 0 10px;
-  cursor: pointer;
-} */
 
-/* Stil för att visa pekaren som pekar och understruken text */
 .nav-left ul li:hover,
 .nav-right ul li:hover {
   cursor: pointer;
-  position: relative; /* För att göra det möjligt att lägga till pseudo-element */
+  position: relative; 
 }
 
 .nav-left ul li:hover::after,
@@ -113,10 +107,10 @@ nav ul {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -3px; /* Justera beroende på hur tjock du vill att understrecken ska vara */
+  bottom: -3px;
   width: 100%;
-  height: 2px; /* Tjocklek på understrecken */
-  background-color: black; /* Färgen på understrecken */
+  height: 2px; 
+  background-color: rgb(237, 231, 213);
 }
 
 
@@ -124,7 +118,7 @@ nav ul li a {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #fff;
+  color: rgb(237, 231, 213);
 }
 
 
