@@ -117,5 +117,5 @@ function setupCarousel(slidesSelector, nextButtonSelector, prevButtonSelector) {
 
 // Använd funktionen för att skapa två olika carousels
 // setupCarousel(".slide-carousel1", ".btn-next-carousel1", ".btn-prev-carousel1");
-setupCarousel(".slide", ".btn-next", ".btn-prev");
+setupCarousel(".slide-hiking", ".btn-next-hiking", ".btn-prev-hiking");
 setupCarousel(".slide-camping", ".btn-next-camping", ".btn-prev-camping");
