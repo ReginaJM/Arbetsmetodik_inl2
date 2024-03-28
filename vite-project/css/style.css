@@ -55,7 +55,7 @@ header {
   display: flex;
   justify-content: space-around; 
   align-items: center;
-  padding-top: 40px;
+  padding-top: 60px;
 
 }
 
@@ -103,9 +103,6 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
 }
-
-
-
 
 
 
