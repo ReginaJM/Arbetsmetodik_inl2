@@ -57,7 +57,7 @@ header {
   width: 100%;
   z-index: 2; 
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-around; 
   align-items: center;
   padding-top: 40px;
 
@@ -72,7 +72,6 @@ h1 {
   font-style: normal;
   font-size: 4rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-
 }
 
 .nav-left,
