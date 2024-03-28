@@ -1,5 +1,4 @@
 /**
- * 
  * Functionality for menu buttons
  */
 document.addEventListener("DOMContentLoaded", function() {
@@ -23,16 +22,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 /**
- * 
  * Functionality for To-top-btn scroll behavior
  */
 document.addEventListener("DOMContentLoaded", function() {
-  // Här lägger vi till eventlyssnare för klick på knappen
+
   document.getElementById("to-top-btn").addEventListener("click", function() {
       scrollToTop();
   });
 
-  // Här lägger vi till eventlyssnare för scrollning
   window.addEventListener("scroll", function() {
       scrollFunction();
   });
@@ -58,7 +55,6 @@ function scrollFunction() {
 
 
 /**
- * 
  * Function to set ut carousel collage
  */
 function setupCarousel(slidesSelector, nextButtonSelector, prevButtonSelector) {

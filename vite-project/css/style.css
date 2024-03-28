@@ -19,9 +19,15 @@ body{
   background-color: rgba(89, 82, 59);
 }
 
+
+/* 
+===========================================
+    Hero
+===========================================
+*/
 .hero {
   width: 100%;
-  height: auto; /* 615px */
+  height: auto; 
   overflow: hidden; 
   position: relative;
 }
@@ -70,6 +76,13 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
+
+
+/* 
+===========================================
+    Nav
+===========================================
+*/
 .nav-left,
 .nav-right {
   color: rgb(237, 231, 213);
@@ -91,7 +104,6 @@ nav ul {
   padding: 0;
 }
 
-
 .nav-left ul li:hover,
 .nav-right ul li:hover {
   cursor: pointer;
@@ -109,7 +121,6 @@ nav ul {
   background-color: rgb(237, 231, 213);
 }
 
-
 nav ul li a {
   display: block;
   padding: 10px 20px;
@@ -119,10 +130,13 @@ nav ul li a {
 
 
 
-
-
+/* 
+===========================================
+    To top button
+===========================================
+*/
 #to-top-btn {
-  /* display: none;  */
+  display: none;  
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -143,7 +157,11 @@ nav ul li a {
 
 
 
-
+/* 
+===========================================
+    Hobby sections
+===========================================
+*/
 .hobby-section {
   background-color: rgba(89, 82, 59);
   height: auto;
@@ -172,6 +190,11 @@ nav ul li a {
 
 
 
+/* 
+===========================================
+    Carousel photo collage
+===========================================
+*/
 .slider {
   width: 100%;
   max-width: 800px;
@@ -221,6 +244,13 @@ nav ul li a {
   right: 2%;
 }
 
+
+
+/* 
+===========================================
+    Footer
+===========================================
+*/
 footer {
   background-color: rgb(237, 231, 213);
   color: rgba(89, 82, 59);
@@ -230,8 +260,3 @@ footer {
     margin: 0;
   }
 }
-
-
-
-
-
