@@ -153,8 +153,11 @@ nav ul li a {
   border: solid 2px rgb(237, 231, 213);
 }
 
-
-
+/* 
+===========================================
+    Hobby sections
+===========================================
+*/
 .hobby-section {
   background-color: rgba(89, 82, 59);
   height: auto;
